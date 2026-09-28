@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "AF Sobermesa";
+    src: url("/fonts/AFSobremesa-Medium.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AF Sobremesa";
+    src: url("/fonts/AFSobermesa-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+.filmreel-banner {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    line-height: 0;
+}
+
+.filmreel-banner__track {
+    display: flex;
+    width: max-content;
+    animation: filmreel-scroll 100s linear infinite;
+}
+
+.filmreel-banner__img {
+    height: clamp(64px, 13vw, 130px);
+    width: auto;
+    flex: none;
+    display: block;
+}
+
+.header {
+    display: contents;
+}
+
+@keyframes filmreel-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .filmreel-banner__track {
+        animation: none;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "AF Sobremesa", sans-serif;
+    /* Full-height column so the footer sits at the bottom on short pages. */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    /* Decorative header/footer: "Latest Work" title, nav row, box height. */
+    --header-padding: 14px;
+    --header-title-size: clamp(2rem, 7vw, 3.4rem);
+    --header-nav-size: clamp(0.95rem, 3vw, 1.25rem);
+    --header-box-height: 33px;
+
+    position: relative;
+    /* Establishes a local stacking context so the z-index on the texture
+     overlay below is only ever compared against .sidebar's own
+     children, never anything else on the page. */
+    z-index: 0;
+    background: #81A35C;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    background: #E7B383;
+    z-index: 1;
+}
+
+.sidebar__header,
+.sidebar__footer {
+
+    padding-left: var(--header-padding);
+    padding-right: var(--header-padding);
+    padding-top: 26px;
+    text-align: center;
+}
+
+.sidebar__header {
+    background: #6E9FC1;
+    padding-bottom: 4px;
+}
+
+.sidebar__footer {
+    margin-top: 8px;
+
+    /* Fill whatever height is left below the links. */
+    flex-grow: 1;
+}
+
+.sidebar_book_title {
+    font-size: larger;
+}
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+
+.sidebar__list a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar__list a:hover {
+    color: #8dc2e8;
+}
+
+.sidebar__body {
+    font-family: "AF Sobremesa", sans-serif;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 16px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-content {
+
+    width: 75%;
+}
+
+/* Menu button: only shown on mobile (see the media query below). */
+.sidebar__toggle {
+    display: none;
+    margin: 0 auto 12px;
+    padding: 6px 18px;
+    font: inherit;
+    color: #FFFFFF;
+    text-shadow: inherit;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Mobile: sidebar stacks above the page content and its links collapse
+   behind the Menu button. */
+@media (max-width: 700px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .page-content {
+        width: auto;
+    }
+
+    .sidebar__toggle {
+        display: block;
+    }
+
+    .sidebar__body {
+        display: none;
+        position: static;
+    }
+
+    .sidebar--open .sidebar__body {
+        display: block;
+    }
+
+    .sidebar__footer {
+        display: none;
+    }
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 16px;
+}
+
+.home-text {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.home-img {
+    flex: 0 1 40%;
+    max-width: 400px;
+}
+
+.home-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .home-content {
+        flex-direction: column;
+    }
+
+    .home-img {
+        flex-basis: auto;
+        width: 70%;
+        align-self: center;
+    }
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h4 {
+    margin-bottom: 4px;
+}
+
+.footer {
+    width: auto;
+    color: #FFFFFF;
+    background-color: #000;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer p {
+    margin: auto;
+    line-height: 40px;
+
+}
+
+.img-caption {
+    color: gray;
+    font-size: small;
+    margin-top: 4px;
+}

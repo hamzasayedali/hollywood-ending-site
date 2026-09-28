@@ -1,0 +1,50 @@
+<aside class="sidebar">
+    <div class="sidebar__header">
+		<h3 class="sidebar__title">The World Of<br/><span class="sidebar_book_title">Hollywood, Ending</span></h3>
+		<button class="sidebar__toggle" type="button" aria-expanded="false" aria-controls="sidebar-nav">Menu</button>
+
+        
+		
+	</div>
+    <nav class="sidebar__body" id="sidebar-nav" aria-label="Site">
+    <h4 class="sidebar__title">References</h4>
+    <div class="sidebar__list">
+        <a href="">Movies</a>
+        <a href="">Artworks</a>
+        <a href="">Literature</a>
+        <a href="">Studio Todd Jokes</a>
+        <a href="">Locations & Landmarks</a>
+    </div>
+    <h4 class="sidebar__title">Book Tour</h4>
+    <div class="sidebar__list">
+        <a href="">Photos, Videos & Audio</a>
+        <a href="">Chemistry Reads</a>
+        <a href="">Junket Questions</a>
+    </div>
+    <h4 class="sidebar__title">Fan Projects</h4>
+    <div class="sidebar__list">
+        <a href="">Fan Art</a>
+        <a href="">Discord Server</a>
+        <a href="">Book Club Prompts</a></div>
+    <h4 class="sidebar__title">About the Site</h4>
+    <div class="sidebar__list">
+        <a href="">How to Contribute</a>
+        <a href="">Sources & Credits</a>
+        <a href="">AI Policy</a>
+    </div>
+    </nav>
+    
+		
+    <div class="sidebar__footer"></div>
+</aside>
+
+<script>
+	// Mobile only: the toggle is hidden on desktop, where the links are always shown.
+	for (const toggle of document.querySelectorAll<HTMLButtonElement>(".sidebar__toggle")) {
+		toggle.addEventListener("click", () => {
+			const open = toggle.getAttribute("aria-expanded") !== "true";
+			toggle.setAttribute("aria-expanded", String(open));
+			toggle.closest(".sidebar")?.classList.toggle("sidebar--open", open);
+		});
+	}
+</script>
