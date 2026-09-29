@@ -1,9 +1,9 @@
 <header class="header">
-	<div class="filmreel-banner" aria-hidden="true">
+	<a class="filmreel-banner" href={import.meta.env.BASE_URL} aria-label="Home">
 		<div class="filmreel-banner__track">
 			<!-- Two identical copies: the animation shifts the track by -50% (one copy's width), then loops back to 0 invisibly. -->
 			<img class="filmreel-banner__img" src={`${import.meta.env.BASE_URL}/images/banner.png`.replace("//", "/")} alt="">
 			<img class="filmreel-banner__img" src={`${import.meta.env.BASE_URL}/images/banner.png`.replace("//", "/")} alt="">
 		</div>
-	</div>
+	</a>
 </header>
