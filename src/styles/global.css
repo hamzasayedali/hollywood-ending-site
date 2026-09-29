@@ -265,3 +265,7 @@ h4 {
     font-size: small;
     margin-top: 4px;
 }
+
+.img-caption a {
+    color: gray;
+}
