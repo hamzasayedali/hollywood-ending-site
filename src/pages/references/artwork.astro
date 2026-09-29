@@ -1,5 +1,6 @@
 ---
 import SidebarLayout from "../../layouts/SidebarLayout.astro";
+import TextAndImage from "../../components/TextAndImage.astro";
 ---
 
 <SidebarLayout title="Artwork References">
@@ -7,9 +8,98 @@ import SidebarLayout from "../../layouts/SidebarLayout.astro";
     <h1>The Art of <i>Hollywood, Ending</i></h1>
 
     <p>
-    These are the pieces of visual art that are referenced in Hollywood, Ending.
+    These are the pieces of visual art that are referenced in <i>Hollywood, Ending</i>. List compiled by resident artist and nerdfighter Lauren (@potterygeek).
     </p>
 
-    <p>[TODO]</p>
+    <TextAndImage src="/images/artwork-ref/01-sans-neige-joan-mitchell.jpg" alt="Sans Neige, Joan Mitchell" imageSide="right">
+        <h3>Joan Mitchell - <i>Sans Neige</i></h3>
+        <p>This is the first piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/4a3a49c7-8181-437f-a079-5620f5c20147" target="_blank" rel="noopener noreferrer">Joan Mitchell, Sans Neige (Triptych) 1969</a>. Page 62)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/02-farallon-island-albert-bierstadt.jpg" alt="Albert Bierstadt, Farallon Island" imageSide="left">
+        <h3>Albert Bierstadt, <i>Farallon Island</i></h3>
+        <p>This is the second piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/11e4cb25-0960-4ca8-b9f6-bd1fbf192a59" target="_blank" rel="noopener noreferrer">Albert Bierstadt, Farallon Island, 1887</a>. Page 64)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/03-untitled-kerry-james-marshall.jpg" alt="Kerry James Marshall, Untitled" imageSide="right">
+        <h3>Kerry James Marshall, <i>Untitled</i></h3>
+        <p>This is the third piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/d93f17fb-fca8-403f-8a2b-e85e5d43f35f" target="_blank" rel="noopener noreferrer">Kerry James Marshall, Untitled (Gallery), 2016</a>. Page 64)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/04-last-supper-andy-warhol.jpg" alt="Andy Warhol, Last Supper" imageSide="left">
+        <h3>Andy Warhol, <i>Last Supper</i></h3>
+        <p>This is the fourth piece of artwork.</p>
+        <span slot="caption">(<a href="https://en.wikipedia.org/wiki/Last_Supper_(Warhol)" target="_blank" rel="noopener noreferrer">Andy Warhol, Last Supper, 1986</a>. Page 73)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/05-ipad-case-any-warhol.jpg" alt="Andy Warhol, Campbell’s Soup Can (Orange), 1965 as reproduced on an iPad Case" imageSide="right">
+        <h3>Andy Warhol, <i>Campbell’s Soup Can (Orange)</i>, as reproduced on an iPad Case</h3>
+        <p>This is the fifth piece of artwork.</p>
+        <span slot="caption">(<a href="https://www.casetify.com/product/campbell-pink-tablet-case/ipad-pro-129-2020/ipad-ultra-impact-case/16005429?item_option=16005429&google_feed_country_code=us&nbt=nb%253Aadwords%253Ag%253A19673685348%253A144666726903%253A647908627125&nb_adtype=pla&nb_kwd=&nb_ti=pla-2460900730957&nb_mi=104321252&nb_pc=online&nb_pi=CTF-33830237-16005429&nb_ppi=2460900730957&nb_placement=&nb_si=%7bsourceid%7d&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&utm_source=google&utm_campaign=202302_TOFU_GS_COLAB_US_Standard_ENG&utm_medium=cpc&utm_content=adid-647908627125%7cassetgroupid-%7cproductid-CTF-33830237-16005429&utm_term=&gad_source=1&gad_campaignid=19673685348&gbraid=0AAAAADmHmFP9seFaQ8jkyb_AyJe1egQC5&gclid=Cj0KCQjwt9jVBhDXARIsAFSP-6fMo12cnHyBsuORyQdgMRJgULbgWmyLlmfXGLMoCqG6COAAlIcwZOEaAjAdEALw_wcB&artwork_name=campbell-pink-tablet-case&device=ipad-pro-129-2020&product=ipad-ultra-impact-case&itemOption=16005429&item_option=16005429&google_feed_country_code=us&nbt=nb%253Aadwords%253Ag%253A19673685348%253A144666726903%253A647908627125&nb_adtype=pla&nb_kwd=&nb_ti=pla-2460900730957&nb_mi=104321252&nb_pc=online&nb_pi=CTF-33830237-16005429&nb_ppi=2460900730957&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&utm_source=google&utm_campaign=202302_TOFU_GS_COLAB_US_Standard_ENG&utm_medium=cpc&utm_content=adid-647908627125%7Cassetgroupid-%7Cproductid-CTF-33830237-16005429&utm_term=&gad_source=1&gad_campaignid=19673685348&gbraid=0AAAAADmHmFP9seFaQ8jkyb_AyJe1egQC5&gclid=Cj0KCQjwt9jVBhDXARIsAFSP-6fMo12cnHyBsuORyQdgMRJgULbgWmyLlmfXGLMoCqG6COAAlIcwZOEaAjAdEALw_wcB#/16005429 " target="_blank" rel="noopener noreferrer">Andy Warhol, Campbell’s Soup Can (Orange), 1965 as reproduced on an iPad Case</a>. Page 84)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/06-stadia-ii-julie-mehretu.jpg" alt="Julie Mehretu, Stadia II" imageSide="left">
+        <h3>Julie Mehretu, <i>Stadia II</i></h3>
+        <p>This is the sixth piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/3229aff9-ee40-4ef0-9789-106221a25892 " target="_blank" rel="noopener noreferrer">Julie Mehretu, Stadia II, 2004</a>. Page 85)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/07-water-lilies-claude-monet.jpg" alt="Claude Monet, Water Lilies (Nymphéas)" imageSide="right">
+        <h3>Claude Monet, <i>Water Lilies (Nymphéas)</i></h3>
+        <p>This is the seventh piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/7053d468-bf1f-42c9-b5bd-c7ccdb335c66 " target="_blank" rel="noopener noreferrer">Claude Monet, Water Lilies (Nymphéas), 1915-1926</a>. Page 85)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/08-wheat-fields-after-the-rain-vincent-van-gogh.jpg" alt="Vincent van Gogh, Wheat Fields after the Rain (The Plain of Auvers)" imageSide="left">
+        <h3>Vincent van Gogh, <i>Wheat Fields after the Rain (The Plain of Auvers)</i></h3>
+        <p>This is the eighth piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/3c5512b1-e195-4b77-9671-f8c1e73e9b25" target="_blank" rel="noopener noreferrer">Vincent van Gogh, Wheat Fields after the Rain (The Plain of Auvers), 1890</a>. Page 85)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/09-le-moulin-de-la-galette-vincent-van-gogh.jpg" alt="Vincent van Gogh, Le Moulin de la Galette" imageSide="left">
+        <h3>Vincent van Gogh, <i>Le Moulin de la Galette</i></h3>
+        <p>This is the ninth piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/01fd8421-c117-4309-8f99-b08b7bacec79" target="_blank" rel="noopener noreferrer">Vincent van Gogh, Le Moulin de la Galette, 1886-87</a>. Page 85)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/10-the-port-of-trouville-eugene-louis-boudin.jpg" alt="Eugène Louis Boudin, The Port of Trouville (Le Port de Trouville)" imageSide="right">
+        <h3>Eugène Louis Boudin, <i>The Port of Trouville (Le Port de Trouville)</i></h3>
+        <p>This is the tenth piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/f580b37b-0422-4797-8bc1-86247b2255a6" target="_blank" rel="noopener noreferrer">Eugène Louis Boudin, The Port of Trouville (Le Port de Trouville), 1882</a>. Page 85)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/11-untitled-no-9-agnes-martin.jpg" alt="Agnes Martin, Untitled No. 9" imageSide="left">
+        <h3>Agnes Martin, <i>Untitled No. 9</i></h3>
+        <p>This is the eleventh piece of artwork.</p>
+        <span slot="caption">(<a href="https://collection.carnegieart.org/objects/2a691fe3-4b70-467a-8d9a-1d974e058f78" target="_blank" rel="noopener noreferrer">Agnes Martin, Untitled No. 9, 1977</a>. Page 85)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/12-untitled-jean-michel-basquiat-andy-warhol.jpg" alt="Andy Warhol and Jean Michel Basquiat Collaboration, Untitled" imageSide="right">
+        <h3>Andy Warhol and Jean Michel Basquiat Collaboration, <i>Untitled</i></h3>
+        <p>This is the twelfth piece of artwork.</p>
+        <span slot="caption">(<a href="https://warhol.netx.net/portals/warhol-exhibitions/#asset/131424" target="_blank" rel="noopener noreferrer">Andy Warhol and Jean Michel Basquiat Collaboration, Untitled, 1984-85</a>. Page 203)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/13-with-my-back-to-the-world-agnes-martin.jpg" alt="Agnes Martin, With My Back to the World" imageSide="left">
+        <h3>Agnes Martin, <i>With My Back to the World</i></h3>
+        <p>This is the thirteenth piece of artwork.</p>
+        <span slot="caption">(<a href="https://www.moma.org/collection/works/79892" target="_blank" rel="noopener noreferrer">Agnes Martin, With My Back to the World, 1997</a>. Page 203)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/14-single-dollar-sign-andy-warhol.jpg" alt="Andy Warhol, Single Dollar Sign - $ (1) FS II.275" imageSide="right">
+        <h3>Andy Warhol, <i>Single Dollar Sign - $ (1) FS II.275</i></h3>
+        <p>This is the fourteenth piece of artwork.</p>
+        <span slot="caption">(<a href="https://www.artsy.net/artwork/andy-warhol-single-dollar-sign-dollars-1-fs-ii-dot-275-1" target="_blank" rel="noopener noreferrer">Andy Warhol, Single Dollar Sign - $ (1) FS II.275, 1958</a>. Page 215)</span>
+    </TextAndImage>
+
+    <TextAndImage src="/images/artwork-ref/15-big-electric-chair-andy-warhol.jpg" alt="Andy Warhol, Big Electric Chair" imageSide="left">
+        <h3>Andy Warhol, <i>Big Electric Chair</i></h3>
+        <p>This is the fifteenth piece of artwork.</p>
+        <span slot="caption">(<a href="https://en.wikipedia.org/wiki/Big_Electric_Chair" target="_blank" rel="noopener noreferrer">Andy Warhol, Big Electric Chair, 1967</a>. Page ?)</span>
+    </TextAndImage>
+    
 </div>
 </SidebarLayout>
